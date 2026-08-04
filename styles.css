@@ -608,11 +608,13 @@ footer > div a:hover::after {
   bottom: 0;
   left: 44px;
   width: 1px;
+  z-index: 0;
   background: linear-gradient(var(--accent), var(--line) 80%, transparent);
 }
 
 .timeline-item {
   position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 90px 170px 1fr;
   gap: 28px;
@@ -649,7 +651,7 @@ footer > div a:hover::after {
   border-color: rgba(255, 255, 255, 0.16);
   border-radius: 18px;
   color: #fff;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.045));
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.045)), #111827;
   box-shadow: 0 0 0 8px var(--bg), inset 0 1px 0 rgba(255, 255, 255, 0.16), 0 14px 34px rgba(0, 0, 0, 0.28);
   overflow: hidden;
   text-align: center;
