@@ -1058,7 +1058,11 @@ body::after { right: -28rem; bottom: 4%; background: #7d5cff; }
 
 .status-dot { background: #fff; box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.13); }
 
-.hero { min-height: 100svh; padding-top: 146px; }
+.hero {
+  min-height: auto;
+  padding-top: 146px;
+  padding-bottom: 58px;
+}
 .hero::before { opacity: 0.38; }
 .hero h1 {
   max-width: none;
@@ -1136,6 +1140,7 @@ body::after { right: -28rem; bottom: 4%; background: #7d5cff; }
 
 .section { padding-top: 124px; padding-bottom: 124px; }
 .experience, .work, .skills { border-top-color: rgba(255, 255, 255, 0.08); }
+.experience { padding-top: 92px; }
 .section-label { color: #8abfff; }
 .section-heading h2, .contact h2 { letter-spacing: -0.063em; }
 .section-heading h2 span { color: #86868b; }
