@@ -643,14 +643,15 @@ footer > div a:hover::after {
 }
 
 .timeline-marker .company-logo {
-  width: 80px;
-  height: 56px;
-  padding: 9px;
-  border-color: rgba(255, 255, 255, 0.7);
-  border-radius: 17px;
-  background: rgba(255, 255, 255, 0.94);
-  box-shadow: 0 0 0 9px var(--bg), inset 0 1px 0 #fff, 0 14px 30px rgba(0, 0, 0, 0.28);
+  width: 88px;
+  height: 62px;
+  padding: 9px 11px;
+  border-color: rgba(255, 255, 255, 0.72);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 0 0 8px var(--bg), inset 0 1px 0 #fff, 0 14px 34px rgba(0, 0, 0, 0.3);
   overflow: hidden;
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
 }
 
 .company-logo img {
@@ -659,6 +660,12 @@ footer > div a:hover::after {
   height: 100%;
   object-fit: contain;
 }
+
+.company-logo-grant img { transform: scale(2.05); }
+.timeline-item:hover .company-logo { transform: translateY(-3px) scale(1.03); }
+.timeline-item:hover .company-logo-aws { box-shadow: 0 0 0 8px var(--bg), 0 18px 38px rgba(255, 153, 0, 0.2); }
+.timeline-item:hover .company-logo-tech { box-shadow: 0 0 0 8px var(--bg), 0 18px 38px rgba(238, 20, 57, 0.2); }
+.timeline-item:hover .company-logo-grant { box-shadow: 0 0 0 8px var(--bg), 0 18px 38px rgba(108, 67, 156, 0.22); }
 
 .timeline-meta { padding-top: 5px; }
 .timeline-meta p { margin: 0; color: #dfe9ed; font-size: 0.78rem; font-weight: 700; }
@@ -1231,12 +1238,12 @@ body::after { right: -28rem; bottom: 4%; background: #7d5cff; }
   .float-card-a { right: 4%; }
   .float-card-b { left: 3%; }
   .scroll-cue { display: none; }
-  .timeline-item { grid-template-columns: 1fr; padding-left: 22px; }
-  .timeline::before { left: 2px; }
-  .timeline-marker { position: absolute; left: -5px; top: 7px; width: 15px; }
+  .timeline-item { grid-template-columns: 1fr; padding-left: 56px; }
+  .timeline::before { left: 20px; }
+  .timeline-marker { position: absolute; left: 0; top: 5px; width: 42px; }
   .timeline-marker span { width: 14px; height: 14px; border-radius: 50%; color: transparent; box-shadow: 0 0 0 6px var(--bg); }
-  .timeline-marker .company-logo { width: 14px; height: 14px; padding: 0; border: 0; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 6px var(--bg); }
-  .timeline-marker .company-logo img { display: none; }
+  .timeline-marker .company-logo { width: 42px; height: 32px; padding: 5px; border-radius: 10px; box-shadow: 0 0 0 5px var(--bg), 0 8px 18px rgba(0, 0, 0, 0.24); }
+  .timeline-marker .company-logo img { display: block; }
   .timeline-meta,
   .timeline-content { grid-column: 1; }
   .timeline-content { padding: 22px; }
